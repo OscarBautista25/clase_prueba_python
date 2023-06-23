@@ -15,7 +15,12 @@ jobs:
      - image: "circleci/python:3.8.6"
    steps:
      - checkout
-     - run: python3 -m pytest
+     - run:
+          name: Install dependencies
+          command: |
+            python3 -m pip install --upgrade pip
+            python3 -m pip install pytest
+      - run: python3 -m pytest
      
 
 
