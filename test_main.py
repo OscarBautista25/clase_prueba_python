@@ -1,4 +1,3 @@
-import pytest
 from main import sum, es_mayor_que, login
 
 def test_sum():
