@@ -15,8 +15,8 @@ jobs:
      - image: "circleci/python:3.8.6"
    steps:
      - checkout
-     - run: python3 test_main.py
-     - run: pytest test_main.py
+     - run: python3 -m pytest
+     
 
 
 workflows:
