@@ -20,7 +20,7 @@ jobs:
           command: |
             python3 -m pip install --upgrade pip
             python3 -m pip install pytest
-          - run: python3 -m pytest
+      - run: python3 -m pytest
 
 workflows:
   build_and_test:
@@ -29,3 +29,4 @@ workflows:
       - test:
           requires:
             - build
+
