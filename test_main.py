@@ -7,6 +7,7 @@ def test_sum():
 
 def test_sum2():
     assert sum(4,6) == 10
+    assert sum(20,50) == 70
     assert sum(20,21) == 41
     assert sum(11,43) == 54
     print("La función suma2 trabaja correctamente")
